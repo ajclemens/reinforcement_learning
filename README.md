@@ -15,6 +15,6 @@ An essential concept to reinforcement learning is Q-learning, which is based upo
 
  Depending upon the complexity of the problem, it may be too difficult to write the explicit mathematical formula for the Q-function by hand. The Deep Q-Network algorithm solves this problem as a neural network is used to approximate the Q-function. In effect, the explicit mathematical formula for the Q-function is not needed.
 
- In simplest terms, the neural network maps the current state the agent is in to the next action with greatest reward. For the cartpole problem the state involves 4 variables, the cart position, cart velocity, pole angle, and pole angular velocity. Additionally, the two actions that can be taken are move the cart either left or right.
+ In simplest terms, the neural network maps the current state the agent is in to the next action with greatest reward. For the cartpole problem the state involves 4 variables, the cart position, cart velocity, pole angle, and pole angular velocity. The two actions that can be taken are move the cart either left or right.
 
 talk about Exploration rate
