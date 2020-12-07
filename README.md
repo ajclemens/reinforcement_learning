@@ -29,6 +29,8 @@ When the neural network is first initialized, it does not yet have any understan
 
 ### Part 2: Neuroevolution of Augmenting Topologies (NEAT)
 
+Developed by Ken Stanley in 2002, the NEAT genetic algorithm is a novel algorithm, which not only alters the weighting parameters of the neural network, but also the architecture of the neural network itself. 
+
 
 
 
