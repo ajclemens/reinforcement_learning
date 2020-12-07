@@ -2,8 +2,13 @@
 
 by Anthony Clemens
 
+
+### Abstract
 I am using openAI `gym` to train reinforcement learning models to solve the cartpole control problem. I have implemented two solutions to the problem, a Deep Q-Network (DQN) algorithm using `keras`, and a neuroevolution of augmenting topologies (NEAT) genetic algorithm using `neat-python`.
 
+### Problem Statement
+
+## Theory
 ### Part 1: Deep Q-Network
 
 ![](./assets/cartpole_demo.gif)
@@ -21,3 +26,9 @@ An essential concept to reinforcement learning is Q-learning, which is based upo
  In simplest terms, the neural network maps the current state the agent is in to the next action with greatest reward. For the cartpole problem the state includes 4 variables, the cart position, cart velocity, pole angle, and pole angular velocity. Additionally, the two actions that can be taken are either move the cart left or right.
 
 When the neural network is first initialized, it does not yet have any understanding of the environment it will be working in. That is why we first train it using random actions. However, once the model has been trained a bit and gotten a sense of the environment, we want to start trusting the model's policy. The exploration rate is the parameter that quantifies whether we choose a random action, or the model's action. The exploration rate is initialized at 1 (pure random actions) and decays (uses the model more) as training proceeds. The exploration/exploitation trade off is the dilemma of trusting our model (exploitation) and getting an expected result or choosing a random action (exploration) and possibly learning something knew.
+
+### Part 2: Neuroevolution of Augmenting Topologies (NEAT)
+
+
+
+
