@@ -10,7 +10,7 @@ I am using openAI `gym` to train reinforcement learning models to solve the cart
 
 An essential concept to reinforcement learning is Q-learning, which is based upon the idea of a Q-function: 
 
-*The Q-function quantifies the reward an agent may recieve given it's current state and next action*. 
+> *The Q-function quantifies the reward an agent may recieve given it's current state and next action*. 
 
  Depending upon the complexity of the problem, it may be too difficult to write the explicit mathematical formula for the Q-function by hand. The Deep Q-Network algorithm solves this problem as a neural network is used to approximate the Q-function. In effect, the explicit mathematical formula for the Q-function is not needed.
 
