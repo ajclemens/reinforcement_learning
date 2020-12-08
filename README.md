@@ -44,3 +44,6 @@ A fitness function quantifies the quality of an individual genome. The better th
 
 This process repeats for the number of generations you have set or until a fitness threshold is reached. The reproduction and mutation operations in the algorithm may add neurons and/or synapses to `genomes`, so as the algorithm proceeds `genomes` will increase in complexity.
 
+## Results
+
+## Conclusion
