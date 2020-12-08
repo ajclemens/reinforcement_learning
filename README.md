@@ -33,6 +33,10 @@ When the neural network is first initialized, it does not yet have any understan
 
 ### Part 2: Neuroevolution of Augmenting Topologies (NEAT)
 
+![](./assets/neat_demo.gif)
+
+**Figure 2:** Results for NEAT agent after 10,000 generations, 10 episodes per genome.
+
 Developed by Ken Stanley in 2002, the NEAT genetic algorithm is a novel algorithm, which not only alters the weighting parameters of the neural network, but also the architecture of the neural network itself. The beauty of the NEAT algorithm is you don't need to know the best neural network architecture for the problem at hand, since the architecture of the neural network complexifies through the algorithm. Essentially, the best neural network architecture will be produced from the algorithm. 
 
 In the implementation of `neat-python` I am using, the algorithm starts out with a population of individual `genomes`. Each `genome` contains two sets of `genes` that describe how to construct a neural network.

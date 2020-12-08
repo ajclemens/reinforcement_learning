@@ -56,8 +56,6 @@ def train_network(env):
 
     print(f'Best genome:\n{winner}')
 
-
-
 if __name__ == '__main__':
     env = gym.make('CartPole-v0')
     train_network(env)
