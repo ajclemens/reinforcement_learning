@@ -7,6 +7,10 @@ by Anthony Clemens
 I am using openAI `gym` to train reinforcement learning models to solve the cartpole control problem. I have implemented two solutions to the problem, a Deep Q-Network (DQN) algorithm using `keras`, and a neuroevolution of augmenting topologies (NEAT) genetic algorithm using `neat-python`.
 
 ### Problem Statement
+The purpose of this project is an evaluation of the state of modern reinforcement learning algorithms and their applications. Deep learning advancements in reinforcement learning have not only improved the capabilities of artifical intelligence (AI) but also made AI more accessible. I personally wanted to explore the capabilities of modern reinforcement learning algorithms and what kind of problems they can solve.
+
+> It is shown that modern reinforcement learning algorithms such as DQN and NEAT are capable of solving problems in simulation without being explicitly told how to behave. 
+
 
 ## Theory
 ### Part 1: Deep Q-Network
