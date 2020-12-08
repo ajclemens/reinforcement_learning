@@ -55,13 +55,11 @@ def train_network(env):
 
     if render_flag:
         pop.run(eval_fitness, num_generations)
+        winner = stats.best_genome()
     else:
         pe = neat.parallel.ParallelEvaluator(num_workers=num_cores, eval_function=worker_evaluate_genome)
         winner = pop.run(pe.evaluate)
     
-
-    winner = stats.best_genome()
-
     with open('./DSI/reinforcement_learning/assets/neat_winner.pkl', 'wb') as output:
        pickle.dump(winner, output)
 
