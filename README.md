@@ -44,7 +44,7 @@ In the implementation of `neat-python` I am using, the algorithm starts out with
 1. Neuron genes, specifices a single neuron.
 2. Synapse genes, specifices the connection between two neurons.
 
-A fitness function quantifies the quality of an individual genome. The better the ability to solve the problem at hand the higher the fitness functions score. After the population of `genomes` are evaluated the next generation is produced through either sexual or asexual reproduction, and mutation of the fittest individuals from the previous generation. 
+A fitness function quantifies the quality of an individual `genome`. The better the ability to solve the problem at hand the higher the fitness functions score. After the population of `genomes` are evaluated the next generation is produced through either sexual or asexual reproduction, and mutation of the fittest individuals from the previous generation. 
 
 This process repeats for the number of generations you have set or until a fitness threshold is reached. The reproduction and mutation operations in the algorithm may add neurons and/or synapses to `genomes`, so as the algorithm proceeds `genomes` will increase in complexity.
 
