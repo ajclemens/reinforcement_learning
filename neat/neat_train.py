@@ -4,6 +4,7 @@ import numpy as np
 import gym
 import neat
 import sys
+import pickle
 
 render_flag = 1
 num_generations = 2
@@ -42,19 +43,30 @@ def eval_fitness(genomes, config):
         fitness = eval_genome(genome, config)
         genome[1].fitness = fitness
 
-def worker_evaluate_genome(g):
-    net = neat.nn.feed_forward.FeedForwardNetwork(g)
+def worker_evaluate_genome(genome, config):
+    net = neat.nn.feed_forward.FeedForwardNetwork(genome, config)
     return simulate_species(net, env, num_episodes, max_steps, render=render_flag)
 
 def train_network(env):
     config = neat.config.Config(genome_type=neat.genome.DefaultGenome, reproduction_type=neat.reproduction.DefaultReproduction, species_set_type=neat.species.DefaultSpeciesSet, stagnation_type=neat.stagnation.DefaultStagnation, filename='./DSI/capstone/neat_config.txt')
     pop = neat.population.Population(config)
+    stats = neat.statistics.StatisticsReporter()
+    pop.add_reporter(stats)
 
     if render_flag:
         pop.run(eval_fitness, num_generations)
     else:
-        pe = neat.parallel.ParallelEvaluator(num_cores, worker_evaluate_genome)
-        pop.run(pe.evaluate, num_generations)
+        pe = neat.parallel.ParallelEvaluator(num_workers=num_cores, eval_function=worker_evaluate_genome)
+        winner = pop.run(pe.evaluate)
+    
+
+    winner = stats.best_genome()
+
+    with open('./DSI/reinforcement_learning/assets/neat_winner.pkl', 'wb') as output:
+       pickle.dump(winner, output)
+
+    print(f'Best genome:\n{winner}')
+
 
 if __name__ == '__main__':
     env = gym.make('CartPole-v0')

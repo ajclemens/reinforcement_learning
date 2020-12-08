@@ -5,7 +5,7 @@ from tensorflow.keras.models import load_model
 
 if __name__ == '__main__':
     # load model
-    model = load_model('./DSI/capstone/assets/model')
+    model = load_model('./DSI/reinforcement_learning/assets/model')
     # create gym environment
     env = gym.make('CartPole-v0')
     state = env.reset()

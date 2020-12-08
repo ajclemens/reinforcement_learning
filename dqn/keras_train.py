@@ -94,4 +94,4 @@ if __name__ == '__main__':
             agent.train_model(batch_size)
         else:
             print('Memories did not exceed batch size')
-    agent.model.save('./DSI/capstone/assets/model')
+    agent.model.save('./DSI/reinforcement_learning/assets/model')
