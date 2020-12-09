@@ -7,10 +7,9 @@ by Anthony Clemens
 I am using openAI `gym` to train reinforcement learning models to solve the cartpole control problem. I have implemented two solutions to the problem, a Deep Q-Network (DQN) algorithm using `keras`, and a neuroevolution of augmenting topologies (NEAT) genetic algorithm using `neat-python`.
 
 ### Problem Statement
-The purpose of this project is an evaluation of the state of modern reinforcement learning algorithms and their applications. Deep learning advancements in reinforcement learning have not only improved the capabilities of artifical intelligence (AI) but also made AI more accessible. I personally wanted to explore the capabilities of modern reinforcement learning algorithms and what kind of problems they can solve.
+The purpose of this project is an evaluation of the state of modern reinforcement learning algorithms and their applications. Deep learning advancements in reinforcement learning have not only improved the capabilities of artifical intelligence (AI) but also made AI more accessible. I personally wanted to explore the capabilities of modern reinforcement learning algorithms and what kind of problems they can solve. Self driving cars and robotics are two areas in particular that could benefit from training models in simulation. These methods have the potential of saving a lot of time and money (in simulation car crashes don't matter).
 
-> It is shown that modern reinforcement learning algorithms such as DQN and NEAT are capable of solving problems in simulation without being explicitly told how to behave. 
-
+> It is shown here that modern reinforcement learning algorithms such as DQN and NEAT are capable of solving a classic control problem in simulation without being explicitly told how to behave. 
 
 ## Theory
 ### Part 1: Deep Q-Network
@@ -48,6 +47,10 @@ A fitness function quantifies the quality of an individual `genome`. The better 
 
 This process repeats for the number of generations you have set or until a fitness threshold is reached. The reproduction and mutation operations in the algorithm may add neurons and/or synapses to `genomes`, so as the algorithm proceeds `genomes` will increase in complexity.
 
-## Results
+## Results and Conclusion
 
-## Conclusion
+Both algorithms were able to obtain a solution to the cartpole problem. With that being said, the NEAT agents solution was considerably less smooth than the DQNs. For that reason, my human intuition says that the DQN algorithm is superior in this context, however, the two solutions are identical in terms of the reward system we defined.
+
+## Recommendations
+
+I have shown that these methods are capable of solving a classic control problem. The next step is seeing how they handle more complex problems. I am personally interested in a reinforcement learning trading algorithm using `tensortrade` (https://github.com/tensortrade-org/tensortrade), and a poker bot using `neuron_poker` (https://github.com/dickreuter/neuron_poker). Furthermore, I am curious as to what other intriguing problems can be solved via simulation and similar methods.
