@@ -1,3 +1,5 @@
+# source code: https://github.com/CodeReclaimers/neat-python/blob/master/examples/single-pole-balancing/visualize.py
+# The purpose of this code is purely for the draw_net() function to draw the NEAT neural network.
 from __future__ import print_function
 
 import copy
