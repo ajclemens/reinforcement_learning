@@ -19,7 +19,7 @@ Deep learning advancements in reinforcement learning have not only improved the 
 ## Theory
 ### Part 1: Deep Q-Network
 
-![](./assets/cartpole_demo.gif)
+![](./assets/keras_demo.gif)
 
 **Figure 1:** Results for DQN agent after training on 2000 episodes. 
 
