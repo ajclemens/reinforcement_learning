@@ -1,11 +1,12 @@
 import numpy as np
 import gym
 from tensorflow.keras.models import load_model
-
+from tensorflow.keras.utils import plot_model
 
 if __name__ == '__main__':
     # load model
     model = load_model('./DSI/reinforcement_learning/assets/model')
+    plot_model(model, to_file='./DSI/reinforcement_learning/assets/keras_model.png', show_shapes=True)
     # create gym environment
     env = gym.make('CartPole-v0')
     state = env.reset()
