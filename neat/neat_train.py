@@ -9,9 +9,9 @@ import pickle
 render_flag = 0
 num_generations = 10000
 num_episodes = 10
-max_steps = 1000
+max_steps = 200
 
-def simulate_species(net, env, episodes=1, steps=5000, render=False):
+def simulate_species(net, env, episodes, steps, render=False):
     fitnesses = []
     for runs in range(episodes):
         inputs = env.reset()
