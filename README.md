@@ -4,12 +4,17 @@ by Anthony Clemens
 
 
 ### Abstract
-I am using openAI `gym` to train reinforcement learning models to solve the cartpole control problem. I have implemented two solutions to the problem, a Deep Q-Network (DQN) algorithm using `keras`, and a neuroevolution of augmenting topologies (NEAT) genetic algorithm using `neat-python`.
+I am using openAI `gym` to train reinforcement learning models to solve the cartpole control problem in simulation. I have implemented two solutions to the problem, a Deep Q-Network (DQN) algorithm using `keras`, and a neuroevolution of augmenting topologies (NEAT) genetic algorithm using `neat-python`.
 
 ### Problem Statement
-The purpose of this project is an evaluation of the state of modern reinforcement learning algorithms and their applications. Deep learning advancements in reinforcement learning have not only improved the capabilities of artifical intelligence (AI) but also made AI more accessible. I personally wanted to explore the capabilities of modern reinforcement learning algorithms and what kind of problems they can solve. Self driving cars and robotics are two areas in particular that could benefit from training models in simulation. These methods have the potential of saving a lot of time and money (in simulation car crashes don't matter).
+
+Are modern reinforcement learning and genetic algorithms such as DQN and NEAT capable of solving a classic control problem in simulation without being explicitly told how to behave?
 
 > It is shown here that modern reinforcement learning algorithms such as DQN and NEAT are capable of solving a classic control problem in simulation without being explicitly told how to behave. 
+
+### Applications
+
+Deep learning advancements in reinforcement learning have not only improved the capabilities of artifical intelligence (AI) but also made AI more accessible. I personally wanted to explore the capabilities of modern reinforcement learning algorithms and what kind of problems they can solve. The applications of training models in simulation are tremendous. Self driving cars and robotics are two areas in particular that could benefit from training models in simulation. Training in simulation saves time and money (in simulation car crashes don't matter). In the future we will train models in simulation and then bring them into the real world (e.g. robot locomotion).
 
 ## Theory
 ### Part 1: Deep Q-Network
