@@ -1,4 +1,4 @@
-#--- parameters for the XOR-2 experiment ---#
+# This file is necessary for neat-python to work. All of the hyperparameters.
 
 [NEAT]
 fitness_criterion     = max
