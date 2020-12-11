@@ -64,7 +64,7 @@ This process repeats for the number of generations you have set or until a fitne
 
 Both models start out with the same four neurons. The hidden layers is where they differ. The keras model has two hidden (fully connected) layers with 24 neurons each, and the NEAT model only has one hidden layer with a single neuron. However, the NEAT model has additional synapses connecting the input neurons to the output neurons.
 
-Both algorithms were able to obtain a solution to the cartpole problem. With that being said, I believe the NEAT genetic algorithm is superior in this context, because it constructed a simpler solution (neural network). Here, the simple solution is superior to the complex one, because it has managed to reduce the number of operations necessary to obtain the answer (more efficient).
+Both algorithms were able to obtain a solution to the cartpole problem and have identical performance (Fig. 1 & 2). With that being said, I believe the NEAT genetic algorithm is superior in this context, because it constructed a simpler solution (neural network). Here, the simple solution is superior to the complex one, because it has managed to reduce the number of operations necessary to obtain the answer (more efficient).
 
 ## Recommendations
 
